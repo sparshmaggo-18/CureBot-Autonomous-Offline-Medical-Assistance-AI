@@ -82,4 +82,4 @@ This project is licensed under the terms included in the `LICENSE` file.
 
 ## Developer
 
-Rohan Chauhan
+Sparsh Maggo
