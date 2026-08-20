@@ -1,0 +1,52 @@
+CureBot: Autonomous Offline Medical Assistance AI
+
+CureBot is a privacy-first, offline AI chatbot developed to provide instant medical guidance. 
+Built using the TinyLlama-1.1B model and the Ollama framework, it ensures that sensitive health data never leaves the user's local machine, addressing the privacy gaps found in cloud-based AI solutions.
+
+## Key Features
+1. 100% Offline Inference: Works without an internet connection, making it ideal for remote areas or emergency situations.
+2. Privacy-First Design: No data is sent to cloud servers; all processing happens locally on your hardware.
+3. Lightweight Performance: Optimized to run on consumer-grade CPUs with a minimal RAM footprint (~1.5GB - 2.0GB).
+4. Context-Aware Conversations: Uses session-based memory to maintain continuity throughout a medical inquiry.
+5. Custom Medical UI: Features a specialized "Medical Dark Mode" interface with high-resolution anatomical backgrounds.
+
+## Technical Stack
+Frontend: Streamlit Inference 
+Engine: Ollama 
+LLM: TinyLlama-1.1B (Fine-tuned on PubMed & MedQA) 
+Language: Python 3.12 
+
+## System Architecture
+The system is divided into three primary layers:
+User Interface Layer: A Streamlit-based web frontend for user interaction.
+Model Processing Layer: An Ollama engine managing the local TinyLlama model.
+Memory Layer: st.session_state management for tracking conversation history.
+
+
+
+## Setup & Installation
+### 1. Prerequisites
+Install Python 3.12+.
+
+Install Ollama from ollama.com.
+
+Pull the required model:
+
+Bash
+ollama pull tinyllama
+
+### 2. Installation 
+Clone the repository and install the dependencies:
+
+Bash
+pip install streamlit ollama base64
+
+### 3. Running the App
+Navigate to the project directory and run:
+
+Bash
+streamlit run mental_support.py
+
+
+## Project Credits
+Developer - Rohan Chauhan
